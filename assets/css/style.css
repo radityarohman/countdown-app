@@ -1,0 +1,172 @@
+:root {
+	--color-accent: #3e9f85;
+	--color-white: #f9f7f7;
+	--color-black: #222831;
+	--color-secondary: rgba(00, 00, 00, 0.6);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: calc(60% + 0.8vmin);
+}
+
+body {
+	font-family: "Switzer", sans-serif;
+	line-height: 1.5;
+	min-height: 100vh;
+	background-color: var(--color-white);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ol,
+ul {
+	list-style-type: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	text-align: center;
+}
+
+.container {
+	padding: 4rem 4rem;
+}
+
+.background {
+	opacity: 0.2;
+	object-fit: cover;
+	background-repeat: none;
+	height: 100vh;
+	position: relative;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+header h1 {
+	font-size: 6rem;
+	font-weight: 700;
+	color: var(--color-black);
+	line-height: 68px;
+}
+
+header img {
+	height: 8rem;
+}
+
+.count-down {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 20px;
+}
+
+.count-down span {
+	font-size: 3rem;
+	font-family: "Switzer", sans-serif;
+	font-weight: 600;
+}
+
+.time {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.time h2 {
+	font-size: 10rem;
+	color: var(--color-accent);
+}
+
+.time p {
+	font-weight: 600;
+	color: var(--color-secondary);
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--color-black);
+	color: var(--color-white);
+	padding: 1.5rem;
+	margin-top: auto;
+}
+
+@media (max-width: 875px) {
+	.count-down {
+		transform: scale(0.8);
+	}
+}
+
+@media (max-width: 768px) {
+	.time {
+		font-size: 80%;
+	}
+
+	.count-down {
+		transform: scale(0.7);
+	}
+}
+
+@media (max-width: 640px) {
+	.count-down {
+		transform: scale(0.5);
+	}
+
+	header h1 {
+		font-size: 5rem;
+		line-height: 52px;
+	}
+
+	.time p {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 400px) {
+	.count-down {
+		transform: scale(0.42);
+	}
+
+	header h1 {
+		font-size: 4rem;
+		line-height: 40px;
+	}
+}
