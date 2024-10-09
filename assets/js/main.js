@@ -5,7 +5,7 @@ const detik = document.getElementById("detik");
 
 const tahunSekarang = new Date().getFullYear();
 
-const rencanaWaktu = new Date("August 2, 2023 00:00:00");
+const rencanaWaktu = new Date("December 1, 2024 00:00:00");
 
 const updateWaktu = () => {
 	const waktuSekarang = new Date();
